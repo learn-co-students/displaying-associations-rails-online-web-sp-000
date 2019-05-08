@@ -1,3 +1,6 @@
 <h1><%= @category.name %></h1>
 
+<%@category.posts.each do |post|%>
+    <li><h3><%=link_to post.title, post_path(post)%><h3></li>
+<%end%>
 <!-- Add code here to list a category's posts. -->
