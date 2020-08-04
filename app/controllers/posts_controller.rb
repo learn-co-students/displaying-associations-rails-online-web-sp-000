@@ -1,3 +1,4 @@
+# As long as the database and classes are set up correctly, Active Record will figure the rest out for us
 class PostsController < ApplicationController
 	def index
 		@posts = Post.all
